@@ -5,18 +5,17 @@ import jakarta.annotation.PreDestroy;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ru.CKBCourse.alexZ.common.Employment;
-import ru.CKBCourse.alexZ.common.Item;
+import ru.CKBCourse.alexZ.common.Saleable;
 
 @Service
 @Log4j2
 public class ShowServiceOne {
 
     @Autowired
-    private Item item;
+    private Saleable item;
 
     @Autowired
-    private Employment employment;
+    private Saleable employment;
 
     @PostConstruct
     public void init() {

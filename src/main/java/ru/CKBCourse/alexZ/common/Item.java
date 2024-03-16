@@ -19,12 +19,12 @@ public class Item implements Saleable{
 
     @PostConstruct
     public void init() {
-        log.info("This is a " + name + " made of " + material);
+        log.info("This is a {} made of {}", name, material);
     }
 
     @Override
     @PreDestroy
     public void sold() {
-        log.info("Thanks for bye item " + name + ". Good luck.");
+        log.info("Thanks for bye item {} . Good luck.", name);
     }
 }

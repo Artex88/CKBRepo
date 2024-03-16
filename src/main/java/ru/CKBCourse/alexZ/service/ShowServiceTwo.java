@@ -5,23 +5,22 @@ import jakarta.annotation.PreDestroy;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ru.CKBCourse.alexZ.common.Employment;
-import ru.CKBCourse.alexZ.common.Item;
+import ru.CKBCourse.alexZ.common.Saleable;
 
 @Service
 @Log4j2
 public class ShowServiceTwo {
 
-    private Item item;
+    private Saleable item;
 
-    private Employment employment;
+    private Saleable employment;
 
     @Autowired
-    public void setEmployments(Employment employment) {
+    public void setEmployments(Saleable employment) {
         this.employment = employment;
     }
     @Autowired
-    public void setItems(Item item) {
+    public void setItems(Saleable item) {
         this.item = item;
     }
 

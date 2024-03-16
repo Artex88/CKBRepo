@@ -20,12 +20,12 @@ public class Employment implements Saleable{
 
     @PostConstruct
     public void init() {
-        log.info("This is a service " + name + ". The performer will be " + performerName);
+        log.info("This is a service {}. The performer will be {} ", name, performerName);
     }
 
     @Override
     @PreDestroy
     public void sold() {
-        log.info("Thanks for buy a service " + name + ". Good luck.");
+        log.info("Thanks for buy a service {} . Good luck.", name);
     }
 }
